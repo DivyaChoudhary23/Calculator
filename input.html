@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+       <meta charset=" UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <title> Scientific Calculator </title>
+       <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <form method = "POST" action="/calculate">
+
+          <input align=center type="text" Placeholder="Answer" name="Answer"><br><br><br>
+          <input type="text" name="expression" id="expression" value="{{ expression }}">
+          <input type="submit" value="="><br><br>
+          <input type="text" name="result" id="result" value="{{ result }}" readonly>
+          <input type="reset" value="C">
+      </form>
+
+      <div class="calculator"><br>
+          <button name="expression" value="sin" (onclick="addtoExpression(this.value)">Sin</button>
+          <button name="expression" value="cos" (onclick="addtoExpression(this.value)">Cos</button>
+          <button name="expression" value="tan" (onclick="addtoExpression(this.value)">Tan</button>
+          <button name="expression" value="Sqrt" (onclick="addtoExpression(this.value)">√</button>
+          <button name="expression" value="**2" (onclick="addtoExpression(this.value)">x^2</button><br>
+          <button name="expression" value="log" (onclick="addtoExpression(this.value)">log</button>
+          <button name="expression" value="exp" (onclick="addtoExpression(this.value)">Exp</button>
+          <button name="expression" value="Pie" (onclick="addtoExpression(this.value)">π</button>
+          <button name="expression" value="(" (onclick="addtoExpression(this.value)">(</button>
+          <button name="expression" value=")" (onclick="addtoExpression(this.value)">)</button><br>
+          <button name="expression" value="0" (onclick="addtoExpression(this.value)">0</button>
+          <button name="expression" value="9" (onclick="addtoExpression(this.value)">9</button>
+          <button name="expression" value="8" (onclick="addtoExpression(this.value)">8</button>
+          <button name="expression" value="7" (onclick="addtoExpression(this.value)">7</button>
+          <button name="expression" value="+" (onclick="addtoExpression(this.value)">+</button>
+          <button name="expression" value="6" (onclick="addtoExpression(this.value)">6</button><br>
+          <button name="expression" value="5" (onclick="addtoExpression(this.value)">5</button>
+          <button name="expression" value="4" (onclick="addtoExpression(this.value)">4</button>
+          <button name="expression" value="3" (onclick="addtoExpression(this.value)">3</button>
+          <button name="expression" value="2" (onclick="addtoExpression(this.value)">2</button>
+          <button name="expression" value="-" (onclick="addtoExpression(this.value)">-</button><br>
+          <button name="expression" value="/" (onclick="addtoExpression(this.value)">/</button>
+          <button name="expression" value="." (onclick="addtoExpression(this.value)">.</button>
+          <button name="expression" value="%" (onclick="addtoExpression(this.value)">%</button>
+          <button name="expression" value="=" >=</button>
+
+
+      </div>
+   </body>
+
+
+</html>
